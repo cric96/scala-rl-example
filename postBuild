@@ -1,9 +1,10 @@
 #!/bin/bash
+## Install python dependencies
+pip install gym
 
 # Install coursier
 curl -L -o coursier https://git.io/coursier-cli
 chmod +x coursier
-
 # Install almond for Scala 2.13
 SCALA_VERSION=2.13.3 ALMOND_VERSION=0.10.9
 ./coursier bootstrap \
